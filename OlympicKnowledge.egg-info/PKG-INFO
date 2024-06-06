@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: OlympicKnowledge
+Version: 1.0
+Summary: Provides comprehensive information about the history of handball in the Olympics.
+Home-page: https://github.com/LanreAdetola/olympicknowledge
+Author: Lanre Adetola
+Author-email: r0913836@student.thomasmore.be
+License: ME
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: fpdf
+Requires-Dist: schedule
+Requires-Dist: pillow
+Requires-Dist: fpdf
