@@ -1,19 +1,52 @@
+
 # OlympicKnowledge
 
-OlympicKnowledge is a Python package that provides information about the history of handball in the Olympics. This package includes methods to fetch general information about the sport, medalists by country and year, and detailed information about specific athletes.
+OlympicKnowledge is a Python package for exploring the history and statistics of Olympic handball. It provides tools to fetch general information, analyze medalists by country, year, and athlete, and generate PDF reports.
 
 ## Features
 
-- **General**: Provides general information about handball, including a description, equipment, and a picture.
-- **Country**: Shows all medalists from a given country, sorted by year, including the country's flag.
-- **Year**: Displays all medalists (athletes and their country) from a given year, categorized by medal. Also supports a range of years.
-- **Athlete**: Shows detailed information and a picture of a given athlete, including Olympic medals won. Supports search by nickname.
+- **General Information**: Fetches a description and image of handball from Wikipedia.
+- **Medalists by Country**: Lists all Olympic handball medalists from a specified country, sorted by year and medal type.
+- **Medalists by Year**: Displays all medalists (athletes and their countries) for a given year, categorized by medal.
+- **Athlete Search**: Shows detailed information and Wikipedia links for a given athlete, including medals won.
+- **Handball Leagues**: Retrieves handball league information for a specified country using a public API.
+- **PDF Reports**: Generates PDF summaries for all queries using customizable templates.
 
 ## Installation
 
-To install the package and its dependencies, run:
+Install dependencies with:
 
 ```bash
-pip install requests beautifulsoup4 fpdf schedule pillow
-
+pip install requests beautifulsoup4 fpdf schedule pillow pandas
 ```
+
+## Usage
+
+Each module can be run as a script or imported:
+
+- `general.py`: Fetch general info about handball.
+- `country.py`: List medalists by country.
+- `year.py`: List medalists by year.
+- `athlete.py`: Search for athlete details.
+- `Find_league.py`: Find handball leagues by country.
+
+Example:
+
+```bash
+python OlympicKnowledge/general.py
+python OlympicKnowledge/country.py
+```
+
+## Data Sources
+
+- Wikipedia (Handball, Olympic medalists)
+- RapidAPI (Handball leagues)
+
+## Output
+
+- CSV files for medalist data
+- PDF reports for all queries
+
+## License
+
+MIT
